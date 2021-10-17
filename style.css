@@ -1,0 +1,172 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 375px;
+  height: 812px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--Pale-blue);
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.order-card {
+  margin: auto;
+  width: 313px;
+  height: 563px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 16px 16px 1px var(--Pale-blue);
+}
+
+.order-card img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.order-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 900;
+  padding: 30px;
+  color: var(--Dark-blue);
+}
+
+.order-container .order-offer {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 20px;
+  line-height: 2.5rem;
+  color: var(--Desaturated-blue);
+}
+
+.order-offer-card {
+  display: flex;
+  width: 250px;
+  height: 70px;
+  margin: 20px auto;
+  border-radius: 15px;
+  background-color: var(--Very-pale-blue);
+  justify-content: space-around;
+}
+
+.order-offer-card img {
+  width: 50px;
+  height: 50px;
+  margin-top: 11px;
+  margin-left: 5px;
+}
+
+.order-offer-card .order-offer-information {
+  margin-left: 0;
+  margin-top: 10px;
+  line-height: 2.5rem;
+}
+
+.order-offer-card .order-offer-plan {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--Dark-blue);
+  text-align: center;
+}
+
+.order-offer-card .order-offer-price {
+  align-self: flex-end;
+  font-size: 1.6rem;
+  color: var(--Desaturated-blue);
+  text-align: center;
+}
+
+.order-offer-card .order-offer-change {
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+.order-offer-card .order-offer-change .change {
+  color: var(--Bright-blue);
+}
+
+.order-button {
+  width: 250px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--Bright-blue);
+  box-shadow: 0 16px 16px 1px var(--Pale-blue);
+  color: var(--Very-pale-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.order-container .order-cancel {
+  margin: 20px auto 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--Desaturated-blue);
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  body {
+    min-width: 1440px;
+    min-height: 2560px;
+    background-image: url("./images/pattern-background-desktop.svg");
+    justify-content: center;
+  }
+
+  .order-card {
+    margin-top: 100px;
+    width: 458px;
+    height: 676px;
+  }
+
+  .order-container .order-offer {
+    margin: 0 50px;
+  }
+
+  .order-offer-card {
+    width: 350px;
+    margin-top: 30px;
+  }
+
+  .order-button {
+    margin-top: 15px;
+    margin-left: 53px;
+    width: 350px;
+  }
+
+  .order-container .order-cancel {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
